@@ -1,7 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="portfolio" v-for="portfolio in portfolio" :key="portfolio.id">
+      <p>{{portfolio.id}}</p>
+      <p>{{portfolio.name}}</p>
+      <p>{{portfolio.created}}</p>
+      <p>{{portfolio.detail}}</p>
+      <p>{{portfolio.difficulties}}</p>
+      <a>{{portfolio.github_front}}</a>
+      <a>{{portfolio.github_api}}</a>
+      <p>{{portfolio.solutions}}</p>
+      <a>{{portfolio.url}}</a>
+    </div>
+    <div class="skill" v-for="skill in skill" :key="skill.id">
+      <p>{{skill.id}}</p>
+      <p>{{skill.name}}</p>
+      <p>{{skill.skill}}</p>
+    </div>
   </div>
 </template>
 
