@@ -1,12 +1,10 @@
-
 <template>
   <div class="home">
-    <div class="top-eyecatch">
-      <h1 class="media__fv-ttl">
+    <img class="top-eyecatch" src="../assets/eyecatch.jpg"/>
+    <h1 class="media__fv-ttl">
         Portfolio
-        <div class="small">Web Engineer</div>
-      </h1>
-    </div>
+      <div class="small">Web Engineer</div>
+    </h1>
     <div class="about" id="about">
       <div>
         <div class="content-title">
@@ -18,11 +16,6 @@
             </p>
           </div>
           <div class="profile-detail">
-            <ul>
-              <li>名前：吉川　哲生</li>
-              <li>出身：兵庫県</li>
-              <li>特技：ラテアート</li>
-            </ul>
             <p class="text">
               はじめまして。平成9年生まれ24歳エンジニアのてつおと申します。大手電機メーカーで、製造課として働いていた経歴があり、ものづくりは昔から大好きです。社内大会で、近畿地方3位まで行き、技術指導者として、東京で勤めたこともあります。モノづくりを通して新しい技術を生み出せればと思いエンジニアになりました。
             </p>
@@ -101,8 +94,8 @@
 
 <script>
 import axios from "axios";
-//import Contact from "./Contact.vue";
-//import Footer from "./Footer.vue";
+import Contact from "../components/Contact.vue";
+import Footer from "../components/Footer.vue";
 export default{
   data(){
     return{
@@ -131,8 +124,8 @@ export default{
     this.getSkill();    
   },
   components:{
-    Contect,
-    Fooeter
+    Contact,
+    Footer
   }
 }
 </script>

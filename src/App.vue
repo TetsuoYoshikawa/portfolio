@@ -4,6 +4,7 @@
   </div>
 </template>
 
+
 <style>
 html,
 body,
@@ -160,9 +161,7 @@ select {
 html {
   background-color: #15202b;
 }
-/*------------------------*/
-/*　  全体・共通のスタイル    */
-/*------------------------*/
+
 body {
   color: #333333;
 }
@@ -229,7 +228,6 @@ small {
 }
 .top-eyecatch {
   height: 100vh;
-  background: url(../assets/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -641,14 +639,5 @@ footer {
   border-bottom: 1px solid #f5f5f5;
   position: relative;
 }
-.arrow {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url(./img/arrow.svg) no-repeat;
-  background-size: cover;
-}
+
 </style>
