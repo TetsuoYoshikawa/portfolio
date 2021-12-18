@@ -87,6 +87,15 @@
                   <a>github:</a>
                   <a class="github" :href="portfolio.github_api">バックエンド</a>
                 </p>
+                <p>目的:
+                  <a>{{portfolio.detail}}</a>
+                </p>
+                <p>苦労点:
+                  <a>{{portfolio.difficulties}}</a>
+                </p>
+                <p>改善点:
+                  <a>{{portfolio.solutions}}</a>
+                </p>
               </div>
             </div>
           </div>
@@ -274,7 +283,7 @@ export default{
   background-color: white;
 }
 .portfolio-card {
-  width: 100%;
+  width: 300px;
   margin: 10px 20px 10px 20px;
   padding-bottom: 10px;
   background: #fff;
@@ -311,6 +320,7 @@ export default{
 .portfolio-tags__inner p {
   margin-bottom: 10px;
 }
+
 
 @media screen and (max-width: 960px) {
   .magazine-colum {

@@ -9,7 +9,7 @@
       <div class="form">
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" v-medel="name" />
+          <input type="text" id="name" v-model="name" />
         </div>
         <div>
           <label for="mail">E-mail:</label>
@@ -21,7 +21,7 @@
         </div>
         <div>
           <label for="msg">Message:</label>
-          <textarea id="msg" v-model="message"></textarea>
+          <textarea id="msg" v-model="text"></textarea>
         </div>
         <div class="button-submit">
           <button class="button" type="submit" @click="send()">Button</button>
@@ -39,19 +39,20 @@ export default{
       name:"",
       email:"",
       tel:"",
-      message:""
+      text:""
     }
   },
   methods:{
     async send(){
       await axios
-        .post('http://127.0.0.1:8000/api/email',{
+        .post('http://127.0.0.1:8000/api/contact',{
           name:this.name,
           email:this.email,
           tel:this.tel,
-          message:this.message,
+          text:this.text,
         })
         .then((response) => {
+          alert('お問い合わせありがとうございます。');
           console.log(response);
         })
         .catch((error) => {
