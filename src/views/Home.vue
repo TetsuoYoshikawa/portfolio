@@ -13,6 +13,8 @@
         <div class="profile flex-2">
           <div class="profile-img">
             <p>
+              <img src="../assets/45048D06-5360-4CD7-AFAE-30103F35C407_1_105_c.jpeg" 
+              class="profileImg"/>
             </p>
           </div>
           <div class="profile-detail">
@@ -209,13 +211,16 @@ export default{
   width: 100%;
 }
 .profile-img {
-  width: 30%;
+  width: 100%;
   margin-left: 100px;
-  border-radius: 10px;
 }
 .profile-img p {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
+}
+.profileImg{
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(37, 49, 55);
 }
 .profile-detail {
   margin-left: 100px;
@@ -283,7 +288,7 @@ export default{
   background-color: white;
 }
 .portfolio-card {
-  width: 300px;
+  width: 400px;
   margin: 10px 20px 10px 20px;
   padding-bottom: 10px;
   background: #fff;
@@ -320,7 +325,6 @@ export default{
 .portfolio-tags__inner p {
   margin-bottom: 10px;
 }
-
 
 @media screen and (max-width: 960px) {
   .magazine-colum {
