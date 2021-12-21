@@ -123,14 +123,14 @@ export default{
   methods:{
     async getPortfolio(){
       await axios
-        .get("http://127.0.0.1:8000/api/portfolio")
+        .get("https://ancient-waters-13340.herokuapp.com/api/portfolio")
         .then((response) => {
           this.portfolio = response.data.data;
         })
     },
     async getSkill(){
       await axios
-        .get("http://127.0.0.1:8000/api/skill")
+        .get("https://ancient-waters-13340.herokuapp.com/api/skill")
         .then((response) => {
           this.skill = response.data.data;
         })

@@ -45,7 +45,7 @@ export default{
   methods:{
     async send(){
       await axios
-        .post('http://127.0.0.1:8000/api/contact',{
+        .post('https://ancient-waters-13340.herokuapp.com/api/contact',{
           name:this.name,
           email:this.email,
           tel:this.tel,
