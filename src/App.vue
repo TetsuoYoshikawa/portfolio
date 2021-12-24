@@ -196,7 +196,7 @@ img {
   width: 65%;
 }
 body {
-  background: #fafafa;
+  background:  white;
 }
 small {
   font-size: 20px;
