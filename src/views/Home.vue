@@ -78,8 +78,6 @@
             </a>
             <div class="portfolio-tags">
               <div class="portfolio-tags__inner">
-                <p>フロントエンド:HTML,CSS,JavaScript（Vue.js）</p>
-                <p>バックエンド:PHP（Laravel）</p>
                   <p>作成期間:{{portfolio.created}}</p>
                   <p>
                   <a>github:</a>
