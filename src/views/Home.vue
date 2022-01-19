@@ -286,7 +286,7 @@ export default{
   background-color: white;
 }
 .portfolio-card {
-  width: 400px;
+  width: 500px;
   margin: 10px 20px 10px 20px;
   padding-bottom: 10px;
   background: #fff;
