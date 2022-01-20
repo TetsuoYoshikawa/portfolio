@@ -300,7 +300,7 @@ export default{
   padding-bottom: 10px;
 }
 .portfolio-image {
-  height: 200px;
+  height: 300px;
 }
 .portfolio-tag {
   text-align: center;
