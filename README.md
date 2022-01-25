@@ -73,7 +73,7 @@
 
 ## Contact<a id=contact></a>
 
-<img src="https://yn-portfolio.s3.ap-northeast-3.amazonaws.com/contact1.png">
+<img src="./src/assets/スクリーンショット 6.png">
 
 お問い合わせ欄です
 
